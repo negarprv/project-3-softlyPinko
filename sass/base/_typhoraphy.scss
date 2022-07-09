@@ -1,0 +1,104 @@
+// heading primary and body typgrophy
+.heading-3 {
+  font-size: $font-mediume;
+  color: $color-dark;
+  font-weight: 700;
+  margin-bottom: 2rem;
+
+  &-3 {
+    font-size: 1.9rem;
+    font-weight: 400;
+    color: rgba($color-dark, 0.8);
+  }
+}
+
+.heading-2 {
+  font-size: 2.7rem;
+  color: $color-dark;
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+  &-2 {
+    font-size: 2.8rem;
+    color: $color-light;
+    font-weight: 400;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    padding-top: 11rem;
+    padding-bottom: 2rem;
+
+    &-2 {
+      color: $color-dark;
+      font-size: 2.9rem;
+      font-weight: 400;
+      word-spacing: 1px;
+      letter-spacing: 0.5px;
+      margin-top: 10rem;
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+.heading-4 {
+  display: block;
+  font-weight: 400;
+  text-align: start;
+  padding-left: 5rem;
+
+  &-main-span {
+    color: $color-dark;
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+    word-spacing: 1.5px;
+    padding-top: 1.5rem;
+
+    @include respond(tab-port) {
+      font-size: 1.5rem;
+    }
+  }
+
+  &-sub-span {
+    color: $color-pink;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    word-spacing: 1.5px;
+    padding-bottom: 2rem;
+
+    @include respond(tab-port) {
+      font-size: 1.1rem;
+    }
+  }
+}
+
+.paragraphe {
+  color: $color-dark;
+  font-weight: 300;
+
+  &-2 {
+    color: $color-light;
+    max-width: 40%;
+    margin: 0 auto;
+    margin-bottom: 4.5rem;
+  }
+
+  &-3 {
+    color: $color-dark;
+    font-size: 1.5rem;
+    padding: 0.5rem 1.5rem;
+    font-weight: 300;
+  }
+
+  &-4 {
+    color: $color-grey;
+    font-size: 1.6rem;
+    width: 30%;
+    text-align: center;
+    margin: 1rem auto;
+    font-weight: 400;
+    word-spacing: 2px;
+    margin-bottom: 3rem;
+
+    &-4 {
+      width: 40%;
+    }
+  }
+}

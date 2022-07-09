@@ -1,0 +1,49 @@
+.feature {
+  position: relative;
+  z-index: 5;
+  &-container {
+    height: 40vh;
+  }
+
+  &::after {
+    content: "";
+    border-bottom: 1px solid rgba($color-black, 0.1);
+    width: 75%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.svg {
+  width: 70%;
+  height: auto;
+  transform: scale(2);
+  fill: url(#Gradient1);
+  margin-top: 2rem;
+  transition: all 2s;
+
+  &-change {
+    transform: scale(1.8);
+    padding-left: 10rem;
+  }
+
+  &-rocket {
+    fill: url(#Gradient1);
+    transform: scale(1.5);
+    // margin: 3rem auto;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  &-comment {
+    margin-top: 2rem;
+    fill: url(#Gradient1);
+    transform: scale(1.6);
+  }
+}
+.stop1 {
+  stop-color: $color-purple;
+}
+.stop2 {
+  stop-color: $color-dark-purple;
+}

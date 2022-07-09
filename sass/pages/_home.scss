@@ -1,0 +1,63 @@
+.section-home-feature {
+  margin-top: -20rem;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  top: 120%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.section-work-process {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-purple, 0.9),
+      rgba($color-dark-purple, 0.9)
+    ),
+    url(/img/background.jpg);
+  background-size: cover;
+  background-position: top;
+  height: 80vh;
+}
+
+.section-testimonials {
+  height: 75vh;
+  background-color: #fefefe;
+}
+
+.section-cards {
+  height: 110vh;
+  background-color: $color-light-purple;
+}
+
+.section-counter {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-purple, 0.9),
+      rgba($color-dark-purple, 0.9)
+    ),
+    url(../../img/brooke-cagle-tLG2hcpITZE-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+
+  height: 35vh;
+}
+
+.section-blog {
+  height: 100vh;
+  background-color: $color-light-grey;
+}
+
+.section-contact {
+  background-color: $color-light-purple;
+  height: 100vh;
+}
+
+.section-footer {
+  height: 23vh;
+  background-image: linear-gradient(
+    to right bottom,
+    $color-purple,
+    $color-dark-purple
+  );
+}

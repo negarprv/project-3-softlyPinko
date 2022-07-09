@@ -1,0 +1,13 @@
+.work-process-box {
+  height: 26vh;
+  background-color: $color-light;
+  border-radius: 2rem;
+  width: 15.5rem;
+  box-shadow: 10px 10px rgba($color-light, 0.2);
+  transition: all 0.3s;
+
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-1.2rem);
+  }
+}

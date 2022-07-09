@@ -1,0 +1,48 @@
+.box {
+  padding-right: 9rem;
+  padding-top: 1rem;
+}
+
+.content {
+  text-align: center;
+
+  height: 30vh;
+  width: 20rem;
+
+  &__box {
+    padding-top: 8rem;
+    transition: all 0.5s;
+
+    &:hover {
+      transform: translateY(-1.5rem);
+    }
+  }
+
+  //   &__span {
+  //     font-size: 3.5rem;
+  //     font-weight: 700;
+  //     padding-right: 2rem;
+
+  //   }
+
+  &__heading {
+    padding-top: 0.5rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+
+  /*icon*/
+  &__icon {
+    padding-top: 12rem;
+  }
+  &__svg {
+    fill: rgba($color-light, 0.7);
+    transform: scale(2.5);
+  }
+}
+
+.counter {
+  font-size: 3.5rem;
+  font-weight: 700;
+  padding-right: 2rem;
+}

@@ -1,0 +1,38 @@
+.footer {
+  &-box {
+    padding-top: 4rem;
+    text-align: center;
+
+    &::after {
+      content: "";
+      border-bottom: 1px solid rgba($color-light, 0.2);
+      width: 75%;
+      display: block;
+      margin: 0 auto;
+      margin-top: 3rem;
+    }
+  }
+
+  &-svg {
+    fill: $color-light;
+    width: 3.8rem;
+    height: 3.8rem;
+    transition: all 0.4s;
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+
+    &:hover {
+      fill: $color-pink;
+    }
+  }
+
+  &-p {
+    text-align: center;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    margin-top: 2rem;
+  }
+}

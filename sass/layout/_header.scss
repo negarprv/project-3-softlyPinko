@@ -1,0 +1,54 @@
+// on each page we have the header so this is a layout
+.header {
+  position: relative;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-purple, 0.9),
+      rgba($color-dark-purple, 0.9)
+    ),
+    url(../../img/hero.jpg);
+  background-size: cover;
+  background-position: top;
+  clip-path: inset(0 0 5% 0 round 0% 0% 0% 10%);
+  z-index: 1;
+
+  // clip-path: polygon(100% 0, 100% 81%, 0 100%, 0 0);
+  height: 95vh;
+
+  &_p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    display: inline-block;
+    text-align: center;
+    word-spacing: 0.1rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
+}
+
+.header_container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60rem;
+  text-align: center;
+}
+
+.heading_primary {
+  text-align: center;
+  backface-visibility: hidden;
+
+  &-main {
+    display: block;
+    font-weight: 300;
+    font-size: 4rem;
+    letter-spacing: 0.2rem;
+  }
+  &-sub {
+    display: block;
+    font-weight: 300;
+    font-size: 4rem;
+    letter-spacing: 0.2rem;
+  }
+}

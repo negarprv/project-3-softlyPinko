@@ -1,0 +1,16 @@
+{
+  "name": "softlypinko",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Negar Parvaresh",
+  "license": "ISC",
+  "devDependencies": {
+    "animate.css": "^4.1.1",
+    "node-sass": "^7.0.1"
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,66 @@
+// reusable accros the page and independent and it's a building blcok
+
+.btn {
+  text-decoration: none;
+  transition: all 0.5s;
+
+  &-primary {
+    color: $color-light;
+    background-color: $color-pink;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: 1rem 2rem;
+    border-radius: 10rem;
+
+    &:hover {
+      background-color: $color-dark-purple;
+      box-shadow: 0 1rem 2.5rem rgba($color: #000000, $alpha: 0.3);
+    }
+
+    &:active {
+      box-shadow: 0 0.5rem 2rem rgba($color: #000000, $alpha: 0.3);
+      transform: translateY(1rem);
+    }
+  }
+
+  &-secondary {
+    color: $color-light;
+    background-color: $color-dark-purple;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: 1rem 2rem;
+    border-radius: 10rem;
+
+    &:hover {
+      background-color: $color-pink;
+      box-shadow: 0 1rem 2.5rem rgba($color: #000000, $alpha: 0.3);
+    }
+
+    &:active {
+      box-shadow: 0 0.5rem 2rem rgba($color: #000000, $alpha: 0.3);
+      transform: translateY(1rem);
+    }
+  }
+
+  &-tertiary {
+    text-decoration: none;
+    color: $color-dark-purple;
+    background-color: $color-light;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding: 1rem 1.5rem;
+    border-radius: 10rem;
+
+    &:hover {
+      box-shadow: 0 1rem 2.5rem rgba($color: #000000, $alpha: 0.3);
+    }
+
+    &:active {
+      box-shadow: 0 0.5rem 2rem rgba($color: #000000, $alpha: 0.3);
+      transform: translateY(1rem);
+    }
+  }
+}

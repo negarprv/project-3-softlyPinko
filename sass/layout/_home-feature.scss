@@ -1,0 +1,24 @@
+.home-feature__box {
+  border-radius: 25px;
+  height: 36vh;
+  background-color: $color-light;
+  box-shadow: 0 1.4rem 2.2rem rgba($color-black, 0.2);
+
+  &-img img {
+    display: block;
+    margin: 0 auto;
+    background-color: $color-dark-purple;
+    border-radius: 50%;
+    width: 30%;
+    transition: all 0.2s;
+
+    &:hover {
+      background-color: $color-pink;
+    }
+  }
+
+  &-img {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+  }
+}

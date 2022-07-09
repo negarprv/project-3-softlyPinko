@@ -1,0 +1,57 @@
+.contact {
+  height: 40rem;
+
+  &_heading {
+    color: $color-dark;
+    font-size: 1.9rem;
+    font-weight: 400;
+    padding-bottom: 2rem;
+  }
+
+  &_p {
+    color: $color-grey;
+    font-size: 1.6rem;
+    padding-bottom: 2rem;
+    font-weight: 400;
+  }
+
+  &_form {
+    &-inputs {
+      font-size: 1.3rem;
+      font-family: inherit;
+      font-weight: 300;
+      background: $color-light;
+      border: none;
+      // box-shadow: 1px 1px 1.5rem rgba(224, 224, 224, 0.418);
+      border-radius: 2rem;
+      padding: 2rem;
+      margin-bottom: 1rem;
+
+      &:focus {
+        outline: none;
+        box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+      }
+    }
+    &-input {
+      width: 30rem;
+      height: 5rem;
+
+      &:not(:last-child) {
+        margin-right: 6rem;
+      }
+    }
+    &-text {
+      text-align: start;
+      padding-bottom: 11rem;
+      margin-top: 2rem;
+      width: 90%;
+      margin-bottom: 4rem;
+      height: 15rem;
+    }
+  }
+
+  &-btn {
+    font-size: 1.4rem;
+    padding: 1.4rem;
+  }
+}

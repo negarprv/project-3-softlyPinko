@@ -1,0 +1,179 @@
+.nav {
+  padding: 3rem 0rem;
+  &_container {
+    background-color: $color-light;
+    height: 8rem;
+    width: 100rem;
+    margin: auto;
+    position: relative;
+
+    border-radius: 10rem;
+
+    @include respond(tab-land) {
+      width: 100%;
+    }
+  }
+
+  &_logo {
+    width: 2rem;
+    float: left;
+    margin-left: 2rem;
+    margin-top: 1.8rem;
+
+    &-img {
+      width: 15rem;
+      border-radius: 50%;
+
+      @include respond(tab-land) {
+        width: 13rem;
+      }
+    }
+  }
+  &_ul {
+    float: right;
+    list-style: none;
+    margin-top: 0.7rem;
+    margin-right: 0.5rem;
+  }
+
+  &_li {
+    text-decoration: none;
+    color: $color-dark;
+    transition: all 0.2s;
+
+    &:hover {
+      color: $color-pink;
+    }
+  }
+}
+
+.sticky {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0.4rem 0.4rem 0.75rem rgba($color-dark, 0.1);
+  z-index: 100;
+  background-color: $color-light;
+}
+
+.nav li {
+  display: inline-block;
+  padding: 2rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+
+  @include respond(tab-land) {
+    padding: 1.5rem;
+    margin-top: 0.5rem;
+  }
+}
+
+.current {
+  color: $color-pink;
+}
+
+//////////////////////////////////////
+
+@include respond(tab-port) {
+  .nav {
+    &_container {
+      width: 80%;
+      padding: 5rem 0rem;
+    }
+
+    &_logo {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      &-img {
+        width: 25rem;
+      }
+    }
+
+    &_ul {
+      display: none;
+      float: right;
+      margin-top: 0.7rem;
+      margin-right: 0.5rem;
+    }
+
+    &_checkbox {
+      position: relative;
+      top: -0.5rem;
+      left: 64rem;
+      display: none;
+    }
+
+    &_button {
+      position: relative;
+    }
+
+    &_icon {
+      position: relative;
+      width: 3.5rem;
+      height: 2px;
+      background-color: $color-dark;
+      top: 0;
+      left: 63rem;
+      display: inline-block;
+
+      &::before,
+      &::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        width: 3rem;
+        height: 1.5px;
+        background-color: $color-dark;
+      }
+
+      &::before {
+        top: -1rem;
+        left: 63rem;
+      }
+
+      &::after {
+        top: 1rem;
+        left: 63rem;
+      }
+    }
+
+    &_li {
+      text-decoration: none;
+      color: $color-dark;
+      transition: all 0.2s;
+
+      &:hover {
+        color: $color-pink;
+      }
+    }
+  }
+
+  .sticky {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0.4rem 0.4rem 0.75rem rgba($color-dark, 0.1);
+    z-index: 100;
+    background-color: $color-light;
+  }
+
+  .nav li {
+    display: inline-block;
+    padding: 2rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+
+    @include respond(tab-land) {
+      padding: 1.5rem;
+      margin-top: 0.5rem;
+    }
+  }
+
+  .current {
+    color: $color-pink;
+  }
+}
